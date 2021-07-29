@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="1" >  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <title>Choose your class!</title>
+    <style>
+        .container{
+            text-align: center;
+            margin-top: 100px;
+        }
+            .titleText{
+            position: relative;
+            bottom: 520px;
+            left: -5px;
+        }
+        .wizard{
+            position: relative;
+            bottom: 505px;
+            left: -90px;
+        }
+        .guardian{
+            position: relative;
+            bottom: 505px;
+            left: 10px;
+        }
+        .ranger{
+            position: relative;
+            bottom: 505px;
+            left: 100px;
+        }
+        .background-black{
+            background-color: black;
+        }
+    </style>
+</head>
+<body class="background-black">
+    <div class="pageContainer container">
+        <div class="container">
+            <img src="{{url_for('static',filename = 'background/kyle-sneed-scary-door2.png') }}" alt="background" width="950px" height="600px">
+        </div>
+        <div class="titleText">
+            <img src="{{url_for('static',filename =  'Assets/cooltext389772696872723.png') }}" alt="titleText" width="400px">
+        </div>
+        <img src="{{url_for('static',filename = 'Assets/wizardSprite.png') }}" onclick="createPlayer(this); redirect();" value ="Wizard" alt="wizard" width="125px" class="wizard">
+        <img src="{{url_for('static',filename = 'Assets/guardianSprite.png') }}" onclick="createPlayer(this)" value ="Guardian" alt="guardian" width="125px" class="guardian">
+        <img src="{{url_for('static',filename ='Assets/rangerSprite.png') }}" onclick="createPlayer(this)" value ="Ranger" alt="ranger" width="125px" class="ranger">
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
+
+
+<!-- This is the class stat
+<div>
+    <button class="btn btn-primary" onclick="createPlayer(this)">Wizard</button>
+    <button class="btn btn-primary" onclick="createPlayer(this)">Creator</button>
+    <button class="btn btn-primary" onclick="createPlayer(this)">Guardian</button>
+    </div>
+
+    <div class="d-flex">
+        <div class="wizzard">
+            <h2>Wizard</h2>
+            <p>Health: 100</p>
+            <p>Strength: 2</p>
+            <p>Magic: 15</p>
+            <p>Durability: </p>
+            <p>Speed: 5</p>
+            <p>Money: 50</p>
+        </div>
+        <div class="creator">
+            <h2>Creator</h2>
+            <p>Health: 80</p>
+            <p>Strength: 8</p>
+            <p>Magic: 8</p>
+            <p>Durability: 8</p>
+            <p>Speed: 10</p>
+            <p>Money: 50</p>
+        </div>
+        <div class="guardian">
+            <h2>Guardian</h2>
+            <p>Health: 200</p>
+            <p>Strength: 15</p>
+            <p>Magic: 1</p>
+            <p>Durability: 10</p>
+            <p>Speed: 2</p>
+            <p>Money: 50</p>
+        </div>
+    </div> -->
