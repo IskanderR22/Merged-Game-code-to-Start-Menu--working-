@@ -49,8 +49,8 @@
             <img src="{{url_for('static',filename =  'Assets/cooltext389772696872723.png') }}" alt="titleText" width="400px">
         </div>
         <img src="{{url_for('static',filename = 'Assets/wizardSprite.png') }}" onclick="createPlayer(this); redirect();" value ="Wizard" alt="wizard" width="125px" class="wizard">
-        <img src="{{url_for('static',filename = 'Assets/guardianSprite.png') }}" onclick="createPlayer(this)" value ="Guardian" alt="guardian" width="125px" class="guardian">
-        <img src="{{url_for('static',filename ='Assets/rangerSprite.png') }}" onclick="createPlayer(this)" value ="Ranger" alt="ranger" width="125px" class="ranger">
+        <img src="{{url_for('static',filename = 'Assets/guardianSprite.png') }}" onclick="createPlayer(this); redirect();" value ="Guardian" alt="guardian" width="125px" class="guardian">
+        <img src="{{url_for('static',filename ='Assets/rangerSprite.png') }}" onclick="createPlayer(this); redirect();" value ="Ranger" alt="ranger" width="125px" class="ranger">
     </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
